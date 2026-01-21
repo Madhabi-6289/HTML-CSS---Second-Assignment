@@ -1,0 +1,750 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-black: #010101;
+  --primary-pink: #ed017f;
+  --primary-grey: #676767;
+  --sub-black: #343434;
+  --custom-black: #363940;
+  --main-white: #ffffff;
+  --secondary_grey: #999999;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("fonts/metropolis/Metropolis-Regular.otf"), format("Opentype");
+}
+body {
+  font-family: "Metropolis";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: var(--primary-grey);
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Metropolis";
+  font-size: 57px;
+  font-weight: 900;
+  line-height: 1.19;
+  color: var(--primary-black);
+}
+h2 {
+  font-family: "Metropolis";
+  color: var(--sub-black);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.194;
+  text-align: center;
+}
+h4 {
+  font-family: "Metropolis";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--custom-black);
+}
+h3 {
+  font-family: "Metropolis";
+  font-size: 40px;
+  line-height: 1.07;
+  font-weight: 700;
+  color: var(--sub-black);
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+figure {
+  display: block;
+}
+.container {
+  max-width: 1398px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-20 {
+  max-width: 20%;
+  flex: 0 0 20%;
+  padding: 0 15px;
+}
+.col-25 {
+  max-width: 25%;
+  flex: 0 0 25%;
+  padding: 0 15px;
+}
+.cmn-btn {
+  display: inline-block;
+  padding: 16px 30px;
+  background: var(--primary-pink);
+  color: var(--main-white);
+  font-family: "Metropolis";
+  font-size: 12px;
+  line-height: 1.66;
+  font-weight: 600;
+  letter-spacing: 2px;
+  /* text-transform: uppercase; */
+  border-radius: 4px;
+  transition: 0.5s all ease-in;
+}
+.cmn-btn:hover {
+  color: var(--primary-pink);
+  border: 1px solid var(--primary-pink);
+  background: transparent;
+}
+/* ///navbar css/// */
+.brand a {
+  max-width: 175px;
+  display: block;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-link li a {
+  color: var(--primary-black);
+  text-transform: uppercase;
+  font-family: "Metropolis";
+  font-size: 12px;
+  line-height: 1.66;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 0.5s all ease-in;
+}
+.nav-link li a:hover {
+  color: var(--primary-pink);
+}
+.nav-link li {
+  padding: 0 21px;
+}
+.hamburger {
+  position: absolute;
+  right: 165px;
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger .bar {
+  background-color: var(--primary-black);
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+}
+/* ///banner css/// */
+.ban-row {
+  justify-content: center;
+  align-items: center;
+}
+.ban-cont h1 {
+  max-width: 435px;
+  margin-bottom: 43px;
+}
+.ban-cont p {
+  max-width: 391px;
+  margin-bottom: 40px;
+}
+.banner-btn {
+  margin-bottom: 50px;
+}
+.ban_link {
+  display: flex;
+  align-items: center;
+}
+.loan-btn {
+  color: var(--primary-pink);
+  border: 1px solid var(--primary-pink);
+  background: transparent;
+  margin-left: 20px;
+  transition: all 0.5s ease-in;
+}
+.loan-btn:hover {
+  background: var(--primary-pink);
+  color: var(--main-white);
+}
+.ban-call {
+  padding-right: 22px;
+  border-right: 1px solid #cccccc;
+}
+.ban_social {
+  padding-left: 22px;
+}
+.family-box {
+  /* max-width:650px; */
+  width: 100%;
+}
+
+.family-box img {
+  width: 100%;
+  display: block;
+}
+
+.card {
+  position: absolute;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 600;
+  transition: all 0.5s ease-in;
+}
+
+.card:hover {
+  border: 1px solid var(--primary-pink);
+}
+.card img {
+  width: 22px;
+}
+.car-loan {
+  left: 5%;
+  top: 20%;
+}
+
+.home-loan {
+  right: 5%;
+  top: 25%;
+}
+.ban-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* ///customer experience css/// */
+.customer-cont p {
+  max-width: 622px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  color: var(--secondary_grey);
+}
+.customer {
+  padding-top: 105px;
+  padding-bottom: 90px;
+}
+.customer-cont h2 {
+  margin-bottom: 21px;
+}
+.custm-in {
+  padding: 30px;
+}
+.custm-in h4 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.custm-in p {
+  max-width: 160px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary_grey);
+}
+/* ///service css/// */
+/* .service-row {
+  margin: 0 -54px;
+}
+.serve_col {
+  padding: 0 54px;
+} */
+.service_bg {
+  background: #fef9fc;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.service-cont h2 {
+  margin-bottom: 28px;
+}
+.service-cont p {
+  max-width: 791px;
+  margin: 0 auto;
+  color: var(--secondary_grey);
+  text-align: center;
+  margin-bottom: 70px;
+}
+.card_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  max-width: 254px;
+}
+.card_cont p {
+  max-width: 195px;
+  font-size: 21px;
+  line-height: 1.66;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--custom-black);
+}
+/* ////result css//// */
+.result {
+  padding-top: 98px;
+  padding-bottom: 95px;
+}
+/* .result_row {
+  margin: 0 -100px;
+}
+.result_col {
+  padding: 0 100px;
+} */
+.result-cont p {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--secondary_grey);
+  margin-top: 25px;
+  margin-bottom: 90px;
+}
+.res-card h3 {
+  margin-bottom: 22px;
+}
+.res-card h3:hover {
+  color: var(--primary-pink);
+}
+.res-card p {
+  max-width: 172px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.space {
+  margin-bottom: 55px;
+}
+.res-card:hover h3 {
+  color: var(--primary-pink);
+}
+/* ///footer css/// */
+.footer {
+  padding: 88px 0;
+}
+/* .footer-row{
+  margin: 0 -50px;
+}
+.footer-col{
+  padding: 0 50px;
+} */
+.foot-space {
+  margin-left: 80px;
+}
+.footer-hd {
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--custom-black);
+  font-weight: 600;
+  margin-bottom: 26px;
+}
+.footer-in p {
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--primary-grey);
+  max-width: 180px;
+  margin-bottom: 45px;
+}
+.footer-link li a {
+  color: var(--primary-grey);
+  font-size: 14px;
+  line-height: 1.57;
+  transition: all 0.5s ease-in;
+  /* max-width: 24px;
+  height: 24px; */
+}
+.footer-link li a:hover {
+  color: var(--primary-pink);
+}
+.footer-cont {
+  text-align: end;
+}
+.socials {
+  display: flex;
+}
+.socials li a {
+  max-width: 24px;
+  height: 24px;
+}
+.socials li {
+  margin-right: 23px;
+}
+.socials li:last-child {
+  margin-right: 0;
+}
+.facebook {
+  color: #4b7fcd;
+}
+.youtube {
+  color: #ff0000;
+}
+.linkdin {
+  color: #4a71fb;
+}
+.insta {
+  color: var(--primary-pink);
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.company {
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--primary-black);
+  font-weight: 600;
+}
+.footer-link li {
+  margin-bottom: 19px;
+}
+.footer-link li:last-child {
+  margin-bottom: 0;
+}
+.footer-cont li span {
+  margin-right: 13px;
+}
+.footer-cont li a {
+  font-size: 17px;
+  line-height: 1.29;
+  font-weight: 600;
+  color: var(--primary-black);
+}
+.footer-cont li {
+  display: flex;
+  align-items: center;
+}
+/* ////media queries/// */
+@media (max-width: 1590) {
+  .home {
+    right: 140px;
+  }
+}
+@media (max-width: 1439px) {
+  .home {
+    right: 50px;
+  }
+}
+@media (max-width: 1340px) {
+  .home {
+    right: 196px;
+    top: 590px;
+  }
+  .car {
+    top: 500px;
+  }
+}
+@media (max-width: 1199px) {
+  .home {
+    right: 157px;
+  }
+  .card_cont p {
+    font-size: 19px;
+  }
+  .serve_col {
+    padding: 0 15px;
+  }
+  .service-row {
+    margin: 0 -15px;
+  }
+  .result_col {
+    padding: 0 15px;
+  }
+  .result_row {
+    margin: 0 -15px;
+  }
+}
+@media (max-width: 1100px) {
+  .home {
+    right: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .home {
+    right: 90px;
+  }
+  .result .col-25 {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+  }
+  .foot-space {
+    margin: 0;
+  }
+}
+@media (max-width: 991px) {
+  .custm-in {
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .nav-link {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--main-blue);
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+    transition: 0.4s ease-in-out;
+    z-index: -1;
+  }
+  .nav-link li {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .nav-link li a {
+    color: var(--text-white);
+  }
+  .nav-link.active {
+    left: 0;
+    z-index: 999;
+  }
+  .home {
+    top: 530px;
+    right: -10px;
+  }
+  .ban-cont h1 {
+    max-width: 100%;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .ban-cont p {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .banner-btn {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .ban_link {
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .ban-cont {
+    padding-top: 65px;
+  }
+  .customer .col-25 {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+  }
+  .res-card p {
+    max-width: 100%;
+  }
+  .custm-in p {
+    max-width: 100%;
+  }
+  .card_cont p {
+    font-size: 14px;
+  }
+  .result-cont h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .ban-cont h1 {
+    font-size: 45px;
+  }
+  .card {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+  .car-loan {
+    left: 10px;
+    top: 10%;
+  }
+  .home-loan {
+    right: 10px;
+    top: 15%;
+  }
+  .home {
+    right: -58px;
+    top: 540px;
+  }
+  .car {
+    top: 500px;
+  }
+  .customer .col-25 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .custm-in p {
+    max-width: 100%;
+  }
+  .customer-cont h2 {
+    font-size: 29px;
+  }
+  .customer-cont p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .service-card {
+    padding-bottom: 25px;
+  }
+  .service-row .col-25 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .result {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .service_bg {
+    padding-bottom: 45px;
+  }
+  .res-card h3 {
+    font-size: 30px;
+  }
+  .res-card p {
+    font-size: 15px;
+  }
+  .res-card h3 {
+    margin-bottom: 16px;
+  }
+  .footer .col-20 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .center {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  .footer {
+    padding: 40px 0;
+  }
+  .footer-col {
+    padding-bottom: 25px;
+  }
+  .footer-in p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer-in {
+    text-align: center;
+  }
+
+  .social-link {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .customer-cont h2 {
+    font-size: 24px;
+  }
+  .result .col-25 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .space {
+    margin-bottom: 0;
+  }
+  .result_col {
+    margin-bottom: 40px;
+  }
+  .res-card h3 {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .brand a {
+    max-width: 140px;
+    display: block;
+  }
+  .hdr_btn {
+    display: none;
+  }
+  .ban-cont h1 {
+    font-size: 38px;
+  }
+  .hamburger {
+    right: 22px;
+    width: 27px;
+    height: 22px;
+  }
+  .service-row .col-25 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .service-card {
+    text-align: center;
+  }
+  .card_cont {
+    margin: 0 auto;
+  }
+  .res-card {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .result .col-25 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .loan-btn {
+    margin-top: 20px;
+  }
+  .hamburger {
+    right: 30px;
+  }
+  .customer .col-25 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .customer-cont h2 {
+    font-size: 22px;
+  }
+  .card {
+    position: static;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+  }
+  .ban-img {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .custm-in {
+    text-align: center;
+  }
+  .customer {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .footer .col-20 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
